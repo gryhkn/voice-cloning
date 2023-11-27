@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Streamlit Ses Kaydedici</title>
+</head>
+<body>
+    <button id="recordButton">Kayıt Başlat</button>
+    <button id="stopButton" disabled>Kaydı Durdur</button>
+
+    <script>
+        let mediaRecorder;
+        let audioChunks = [];
+
+        document.getElementById("recordButton").addEventListener("click", function() {
+            navigator.mediaDevices.getUserMedia({ audio: true })
+                .then(stream => {
+                    mediaRecorder = new MediaRecorder(stream);
+                    mediaRecorder.start();
+
+                    mediaRecorder.addEventListener("dataavailable", event => {
+                        audioChunks.push(event.data);
+                    });
+
+                    document.getElementById("recordButton").disabled = true;
+                    document.getElementById("stopButton").disabled = false;
+                });
+        });
+
+        document.getElementById("stopButton").addEventListener("click", function() {
+            mediaRecorder.stop();
+
+            mediaRecorder.addEventListener("stop", () => {
+                const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                // Burada audioBlob'u Streamlit'e gönderme işlemleri yapılacak
+
+                document.getElementById("recordButton").disabled = false;
+                document.getElementById("stopButton").disabled = true;
+                audioChunks = [];
+            });
+        });
+    </script>
+</body>
+</html>
