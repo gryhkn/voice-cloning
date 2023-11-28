@@ -6,9 +6,9 @@ Bu proje, kullanıcıların kendi seslerini kullanarak farklı dillerde ses klon
 
 ## Başlarken
 
-Bu bölüm, projeyi yerel makinenizde nasıl çalıştıracağınıza dair talimatları içerir.
+Bu bölüm, projeyi kendi bilgisayarınızda nasıl çalıştıracağınıza dair talimatları içerir.
 
-### Önkoşullar
+### Gereksinimler
 
 Projeyi çalıştırmadan önce aşağıdaki araçların yüklü olduğundan emin olun:
 
@@ -53,4 +53,5 @@ Projeyi kurmak ve çalıştırmak için aşağıdaki adımları izleyin:
 6. Son olarak [Replicate](https://replicate.com/account/api-tokens) hesabı oluşturup API key alın.
 Uygulamanın açılış ekranındaki input alanına bu API keyi girin.
 
-_Bu uygulamanın Vue ve Nuxt ile geliştirilen versionunu gördüm bunu ve Streamlit ve Python ile yapmaya karar verdim. Bahsettiğim uygulamaya [buradan](https://github.com/Pwntus/voice-cloner) ulaşabilirsiniz._
+_Bu uygulamanın Vue ve Nuxt ile geliştirilen versionunu gördüm 
+ve Streamlit ve Python ile yapmaya karar verdim. Bahsettiğim uygulamaya [buradan](https://github.com/Pwntus/voice-cloner) ulaşabilirsiniz._
