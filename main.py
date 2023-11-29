@@ -59,7 +59,7 @@ if audio:
                 audio_bytes_io = BytesIO(audio['bytes'])
 
                 output = replicate.run(
-                    "lucataco/xtts-v2:6b2385a9c081443f17041bf1a4caeb36393903f4d7e94468f32e90b2ec57ffc2",
+                    "lucataco/xtts-v2:684bc3855b37866c0c65add2ff39c78f3dea3f4ff103a436465326e0f438d55",
                     input={
                              "text": user_text,
                              "speaker": audio_bytes_io,
