@@ -5,7 +5,11 @@ import replicate
 from io import BytesIO
 
 st.set_page_config(page_title='Ses Klonlama Uygulaması', page_icon='🎙️')
+
+# Sesi klonla butonunu ortaya almak için ekranı dikeyde parçalara böl
 t1, t2, t3 = st.columns([1.2,2,1])
+
+# butonu ortala
 with t2:
     st.title('Sesini Klonla 🎙️')
 
