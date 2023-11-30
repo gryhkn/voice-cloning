@@ -38,6 +38,7 @@ col1, col2, col3 = st.columns([2,2,1])
 with col2:
     audio = mic_recorder(start_prompt="⏺️ Kaydı Başlat", stop_prompt="⏹️ Kaydı Durdur", key='recorder')
 
+# eğer ses kaydı oluştuysa devam et
 if audio:
     st.audio(audio['bytes'])
 
