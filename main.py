@@ -31,9 +31,10 @@ st.markdown("X'te bana ulaşın: [**:blue[Giray]**](https://twitter.com/gryhkn)"
 # sayfayı bölmek için çizgi oluştur
 st.divider()
 
-
+# sayfayı tekrar böl
 col1, col2, col3 = st.columns([2,2,1])
 
+# kaydı başlat - durdur butonunu oluştur ve ortala
 with col2:
     audio = mic_recorder(start_prompt="⏺️ Kaydı Başlat", stop_prompt="⏹️ Kaydı Durdur", key='recorder')
 
