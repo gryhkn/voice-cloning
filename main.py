@@ -4,6 +4,7 @@ import os
 import replicate
 from io import BytesIO
 
+#page icon and name
 st.set_page_config(page_title='Ses Klonlama Uygulaması', page_icon='🎙️')
 
 # Sesi klonla butonunu ortaya almak için ekranı dikeyde parçalara böl
@@ -26,7 +27,10 @@ st.markdown("""Başlamak için aşağıdaki "**Kaydı Başlat**" düğmesine bas
 
 
 st.markdown("X'te bana ulaşın: [**:blue[Giray]**](https://twitter.com/gryhkn)")
+
+# sayfayı bölmek için çizgi oluştur
 st.divider()
+
 
 col1, col2, col3 = st.columns([2,2,1])
 
