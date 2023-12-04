@@ -1,4 +1,4 @@
 python-dotenv==1.0.0
 replicate==0.21.0
 streamlit==1.28.2
-
+streamlit-mic-recorder==0.0.4
