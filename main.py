@@ -51,13 +51,13 @@ if uploaded_file or audio:
     if uploaded_file:
         audio_buffer = uploaded_file
         st.audio(audio_buffer, format='audio/wav')
-    # Eğer mikrofonla kayıt yapıldıysa, bu kaydı kullan
+    # eğer mikrofonla kayıt yapıldıysa, bu kaydı kullan
     elif audio:
         st.audio(audio['bytes'])
         audio_buffer = BytesIO(audio['bytes'])
 
     if audio or uploaded_file:
-        # Ses dosyasını indirme butonu
+        # ses dosyasını indirme butonu
         st.download_button(
             label="Kaydı İndir",
             data=audio_buffer.read() if uploaded_file else audio['bytes'],
