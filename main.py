@@ -37,7 +37,7 @@ col1, col2, col3 = st.columns([1,3,1])
 with col2:
     uploaded_file = st.file_uploader("Ses Dosyası Yükle", type=['wav', 'mp3'], key="file_uploader")
 
-# Mikrofon kayıt butonu
+# mikrofon kayıt butonu
 with col1:
     audio = None
     st.markdown("Sesini kaydet")
