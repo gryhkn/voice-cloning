@@ -33,7 +33,7 @@ st.divider()
 # Kullanıcı arayüzü için yeni satır
 col1, col2, col3 = st.columns([1,3,1])
 
-# Dosya yükleme butonu
+# dosya yükleme butonu
 with col2:
     uploaded_file = st.file_uploader("Ses Dosyası Yükle", type=['wav', 'mp3'], key="file_uploader")
 
