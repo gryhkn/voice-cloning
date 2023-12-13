@@ -30,7 +30,7 @@ st.markdown("X'te bana ulaşın: [**:blue[Giray]**](https://twitter.com/gryhkn)"
 # sayfayı bölmek için çizgi oluştur
 st.divider()
 
-# Kullanıcı arayüzü için yeni satır
+# kullanıcı arayüzü için yeni satır
 col1, col2, col3 = st.columns([1,3,1])
 
 # dosya yükleme butonu
