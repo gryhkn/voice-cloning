@@ -65,7 +65,7 @@ if uploaded_file or audio:
             mime="audio/wav"
         )
 
-        user_text = st.text_area("Seslendirmek istediğiniz metni buraya girin:")
+        user_text = st.text_area("Seslendirmek istediğiniz metni girin:")
 
         if user_text:
             language = st.selectbox("Hedef dil seçiniz",
