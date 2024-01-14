@@ -45,7 +45,7 @@ with col1:
         audio = mic_recorder(start_prompt="⏺️ Kaydı Başlat", stop_prompt="⏹️ Kaydı Durdur", key='recorder')
 
 
-# eğer ses dosyası yüklendiyse veya kaydedildiyse
+# ses dosyasını alma
 if uploaded_file or audio:
     # eğer dosya yüklendiyse, bu dosyayı kullan
     if uploaded_file:
