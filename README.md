@@ -47,11 +47,11 @@ Projeyi kurmak ve çalıştırmak için aşağıdaki adımları izleyin:
 5. Uygulamayı çalıştırmak için aşağıdaki komutu kullanın:
 
     ```
-   streamlit run app.py
+   streamlit run main.py
    ```
    
 6. Son olarak [Replicate](https://replicate.com/account/api-tokens) hesabı oluşturup API key alın.
 Uygulamanın açılış ekranındaki input alanına bu API keyi girin.
 
 _Bu uygulamanın Vue ve Nuxt ile geliştirilen versionunu gördüm 
-ve Streamlit ve Python ile yapmaya karar verdim. Bahsettiğim uygulamaya [buradan](https://github.com/Pwntus/voice-cloner) ulaşabilirsiniz._
+ve Streamlit ve Python ile yapmaya karar verdim. Bahsettiğim uygulamaya [buradan](https://github.com/Pwntus/voice-clone) ulaşabilirsiniz._
